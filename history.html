@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Abdullayev Umidjon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 30px;
+            font-size: 32px;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            letter-spacing: 1px;
+        }
+
+        .hero {
+            padding: 40px 20px;
+        }
+
+        .hero img {
+            width: 300px;
+            max-width: 90%;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            transition: 0.4s;
+        }
+
+        .hero img:hover {
+            transform: scale(1.05);
+        }
+
+        .container {
+            padding: 40px 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            transition: 0.4s;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+        }
+
+        .form-box {
+            margin: 40px auto;
+            padding: 30px;
+            width: 90%;
+            max-width: 400px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .form-box h2 {
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 25px;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background: rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Abdullayev Umidjon
+</header>
+
+<div class="hero">
+    <img src="rasm.png" alt="Umidjon GitHub rasmi">
+</div>
+
+<div class="container">
+    <div class="card">
+        <h2>Xush kelibsiz!</h2>
+        <p>
+            Men Abdullayev Umidjon — dasturlash olamida o‘z yo‘limni qurayotgan yosh web dasturchiman.
+            Men zamonaviy va foydali web sahifalar yaratishga qiziqaman.
+            Har bir yozgan kodim — bu mening tajribam, har bir loyiha esa kelajagim sari qo‘yilgan qadamdir.
+        </p>
+        <button onclick="alert('Rahmat! Sayt yoqdimi?')">Bosing</button>
+    </div>
+
+    <div class="card">
+        <h2>Men haqimda</h2>
+        <p>
+            Men HTML, CSS va Python dasturlash tillari bilan ishlayman.
+            Hozirda web dasturlashni chuqur o‘rganmoqdaman va o‘z ustimda muntazam ishlayman.
+            Maqsadim — kuchli va professional dasturchi bo‘lish hamda o‘z loyihalarimni yaratish.
+        </p>
+    </div>
+</div>
+
+<div class="form-box">
+    <h2>Ro'yxatdan o'tish</h2>
+    <form>
+        <input type="text" placeholder="Ismingiz" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Parol" required>
+        <button type="submit">Ro'yxatdan o'tish</button>
+    </form>
+</div>
+
+<footer>
+    © 2026 Abdullayev Umidjon | GitHub: umidjon3455
+</footer>
+
+</body>
+</html>
