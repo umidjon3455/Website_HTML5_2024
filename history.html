@@ -144,11 +144,12 @@
 
 <div class="form-box">
     <h2>Ro'yxatdan o'tish</h2>
-    <form>
-        <input type="text" placeholder="Ismingiz" required>
-        <input type="email" placeholder="Email" required>
-        <input type="password" placeholder="Parol" required>
+    <form id="demo-registration-form">
+        <input type="text" name="name" placeholder="Ismingiz" aria-label="Ismingiz" autocomplete="name" required>
+        <input type="email" name="email" placeholder="Email" aria-label="Email" autocomplete="email" required>
+        <input type="password" name="password" placeholder="Parol (demo)" aria-label="Parol" autocomplete="new-password" required>
         <button type="submit">Ro'yxatdan o'tish</button>
+        <p id="form-message" role="status" aria-live="polite"></p>
     </form>
 </div>
 
@@ -156,5 +157,15 @@
     © 2026 Abdullayev Umidjon | GitHub: umidjon3455
 </footer>
 
+
+<script>
+    // This is a front-end demo only; never send or store passwords here.
+    document.getElementById('demo-registration-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        document.getElementById('form-message').textContent =
+            "Bu demo forma. Ma'lumotlar yuborilmadi yoki saqlanmadi.";
+        this.reset();
+    });
+</script>
 </body>
 </html>
